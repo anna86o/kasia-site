@@ -54,6 +54,11 @@ p {
   font-size: 15px;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 li {
   list-style: none;
 }
@@ -190,22 +195,25 @@ nav {
 /* stylowanie sekcji zainteresowania */
 #interest ul {
   display: flex;
-  gap: 40px;
+  flex-wrap: wrap;
+  /* Ania: dodałam aby na telefonach, specjalizacje wyświetlałą się jedna pod drugą*/
+  gap: 20px;
   justify-content: space-between;
   text-align: center;
   color: #ffffff;
 }
 
 #interest li {
-  max-width: 300px;
+  max-width: 280px;
 }
 
 #interest h3 {
   margin-bottom: 20px;
 
-  /* stylowanie sekcji zainteresowania - ikony */
+
 }
 
+/* stylowanie sekcji zainteresowania - ikony */
 #interest svg {
   width: 50px;
   height: 50px;
@@ -235,6 +243,8 @@ nav {
 }
 
 .photos-gallery {
+  margin-bottom: 100px;
+  /* Ania: dodałam aby odepchnąc trochę galerię od specjalizacji*/
   display: grid;
   column-gap: 20px;
   grid-template-areas:
@@ -349,7 +359,7 @@ blockquote footer {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  min-width: 280px;
+  min-width: 200px;
   max-width: 500px;
 }
 
@@ -468,4 +478,24 @@ blockquote footer {
   .hidden {
     display: none;
   }
+
+  /* Ania: dodałam, aby strona lepiej wyglądała na telefonie */
+  #interest li {
+    max-width: 100%;
+  }
+
+  #interest ul {
+    justify-content: center;
+  }
+
+  .photos-gallery {
+    display: block;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+  /* .contact-input {
+    width: 100%;
+  } */
 }
