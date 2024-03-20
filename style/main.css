@@ -14,9 +14,11 @@ body {
   font-family: "Catamaran", "Arial", sans-serif;
   color: rgb(36, 33, 33);
 }
+
 img {
   width: 100%;
 }
+
 /* typografia */
 h1,
 h2,
@@ -26,26 +28,32 @@ h3 {
   line-height: 0.8;
   font-family: "Courier New", Courier, monospace;
 }
+
 h1 {
   margin-bottom: 20px;
   font-size: 30px;
   font-family: "Catamaran", "Arial", sans-serif;
   font-weight: 20;
 }
+
 h2 {
   font-size: 50px;
   margin-bottom: 40px;
 }
+
 h3 {
   font-size: 30px;
 }
+
 h2,
 h3 {
   font-weight: 100;
 }
+
 p {
   font-size: 15px;
 }
+
 li {
   list-style: none;
 }
@@ -55,17 +63,21 @@ li {
   width: 90%;
   margin: 0 auto;
 }
+
 #interest {
   background: rgb(3, 105, 105);
   color: #ffffff;
 }
+
 section {
   padding: 80px 20px;
 }
+
 #quote {
   background: rgb(235, 148, 85);
   color: #ffffff;
 }
+
 /* stylowanie headera */
 
 header {
@@ -77,12 +89,14 @@ header {
   height: 40vh;
   color: darkslategrey;
 }
+
 /* stylowanie logo */
 .logo-style {
   color: darkslategrey;
   font-size: 40px;
   font-family: "Montserrat";
 }
+
 /* stylowanie menu mobilnego */
 .burger-menu,
 .close-menu {
@@ -98,6 +112,7 @@ header {
   width: 30px;
   height: 30px;
 }
+
 .open {
   display: block;
 }
@@ -108,6 +123,7 @@ nav {
   justify-content: space-between;
   margin-bottom: 30px;
 }
+
 .nav-menu {
   max-width: 400px;
   min-width: auto;
@@ -116,25 +132,31 @@ nav {
   justify-content: space-between;
   gap: 10px;
 }
+
 .nav-menu a:hover {
   font-weight: 700;
 }
+
 /* stylowanie tekstu */
 .header-text {
   max-width: 700px;
 }
+
 .header-text p {
   margin-bottom: 50px;
   font-weight: 400;
   font-size: 15px;
 }
+
 .header-text a {
   padding: 5px 10px;
   border: 2px solid#ffffff;
 }
+
 .header-text a:hover {
   font-weight: 700;
 }
+
 /* stylowanie sekcji about */
 .about-wraper {
   display: flex;
@@ -142,24 +164,29 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .about-column-left,
 .about-column-right {
   max-width: 45%;
 }
+
 /* stylowanie zdjęcia  */
 
 .about-column-left img {
   width: 100%;
 }
+
 /* stylowanie prawej kolumny */
 .about-column-right h2 {
   color: darkslategray;
   margin-bottom: 20px;
 }
+
 .about-introduction {
   font-weight: 600;
   margin-bottom: 20px;
 }
+
 /* stylowanie sekcji zainteresowania */
 #interest ul {
   display: flex;
@@ -168,64 +195,78 @@ nav {
   text-align: center;
   color: #ffffff;
 }
+
 #interest li {
   max-width: 300px;
 }
+
 #interest h3 {
   margin-bottom: 20px;
 
   /* stylowanie sekcji zainteresowania - ikony */
 }
+
 #interest svg {
   width: 50px;
   height: 50px;
   transform: translateY(25%);
 }
+
 #interest ul div {
   width: 50px;
   height: 50px;
   margin: 0 auto 20px;
 }
+
 /* stylowanie sekcji zdjęć */
 #photos {
   text-align: center;
 }
+
 #photos h2 {
   color: darkcyan;
   margin-bottom: 20px;
 }
+
 #photos p {
   margin: 0 auto;
   margin-bottom: 30px;
   max-width: 500px;
 }
+
 .photos-gallery {
   display: grid;
-  column-gap: 50px;
+  column-gap: 20px;
   grid-template-areas:
-    "foto1 foto2 foto3"
-    "foto1 foto2 foto3"
-    "foto4 foto4 foto5";
+    "foto1 foto1 foto2  foto2 foto3 foto3"
+    "foto1 foto1 foto2  foto2 foto3 foto3"
+    "foto4 foto4 foto4 foto5 foto5 foto5";
   /* display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-around; */
 }
+
 .foto1 {
   grid-area: foto1;
 }
+
 .foto2 {
   grid-area: foto2;
 }
+
 .foto3 {
   grid-area: foto3;
 }
+
 .foto4 {
   grid-area: foto4;
 }
+
 .foto5 {
   grid-area: foto5;
 }
+
 /* padding: 0 0 4rem 0;
 }
 .img-container {
@@ -282,10 +323,12 @@ img {
 .quote-wraper {
   display: flex;
 }
+
 .quote-wraper div {
   height: 75px;
   transform: translateY(25%);
 }
+
 .quote-icon {
   width: 75px;
   height: 75px;
@@ -295,6 +338,7 @@ img {
 blockquote p {
   margin-bottom: 10px;
 }
+
 blockquote footer {
   text-align: right;
 }
@@ -308,16 +352,19 @@ blockquote footer {
   min-width: 280px;
   max-width: 500px;
 }
+
 #contact h2 {
   text-align: center;
   margin-bottom: 50px;
   color: darkcyan;
 }
+
 #contact form label {
   text-transform: capitalize;
   font-size: 14px;
   font-weight: 500;
 }
+
 .contact-input {
   margin-bottom: 16px;
   padding: 8px 10px;
@@ -325,6 +372,7 @@ blockquote footer {
   border-radius: 10px;
   border: 1px solid darkslategray;
 }
+
 #contact form button {
   margin: 0 auto;
   width: 100px;
@@ -334,22 +382,26 @@ blockquote footer {
   border-radius: 10px;
   border: 1px solid cadetblue;
 }
+
 #contact form button:hover {
   background-color: #ffffff;
   color: rgb(235, 148, 85);
 }
+
 /* Stylowanie footera */
 .footer {
   background-color: #cec8c5;
   color: #ffffff;
   padding: 60px 20px;
 }
+
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 24px;
 }
+
 /* muszę SPRAWDZIĆ w html klasę dla icon i text container */
 .footer-icon-container {
   display: flex;
@@ -357,49 +409,62 @@ blockquote footer {
   flex-wrap: wrap;
   align-items: flex-end;
 }
+
 .footer-icon-container a {
   height: 40px;
 }
+
 .footer-text-container {
   min-width: width 200px;
 }
+
 .footer-text-container p {
   margin-bottom: 16px;
 }
+
 .footer-text-container p:last-of-type {
   margin-bottom: 0;
 }
+
 /* Dostosowanie stylowania do mobile */
 @media screen and (max-width: 768px) {
   .h1 {
     font-size: 40px;
     max-width: 220px;
   }
+
   .about-column-right {
     max-width: 100%;
   }
+
   .about-column-left {
     max-width: 100%;
   }
+
   .nav-menu {
     display: none;
     width: auto;
   }
+
   .menu-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
   }
+
   .nav-menu li {
     text-align: right;
     margin-bottom: 10px;
   }
+
   .burger-menu {
     display: block;
   }
+
   .open {
     display: block;
   }
+
   .hidden {
     display: none;
   }
